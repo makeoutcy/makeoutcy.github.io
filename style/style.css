@@ -9,9 +9,12 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    background-color: black;
+}
+
 ::-webkit-scrollbar {
     width: 0.5rem;
-    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -19,10 +22,14 @@ html {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+::-webkit-scrollbar-track {
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
 .main-page {
     width: 100svw;
     height: auto;
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
 }
@@ -36,8 +43,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
 }
 
 .main-page .container .logo {
@@ -83,6 +90,7 @@ footer {
     width: 100svw;
     height: 25svh;
     color: black;
+    background-color: white;
 }
 
 .footer-container {
