@@ -3,90 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAKEOUTCY</title>
+    <title>MAKEOUTCY | Official Website</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="assets/makeoutcy logo light.png" type="image/x-icon"/>
-
-    <meta content="MAKEOUTCY" property="og:title" />
-    <meta content="makeoutcy, makeoutcy music, hyperpop, aesthetic rap" name="keywords">
-    <meta content="17 Year old, independant artist located in the UK. Persuing his passion for music through his initial start doing aesthetic rap, however late 2023 migrating genres and continuing along his musical journey with hyperpop" property="og:description" />
-    <meta name="description" content="17 Year old, independant artist located in the UK. Persuing his passion for music through his initial start doing aesthetic rap, however late 2023 migrating genres and continuing along his musical journey with hyperpop">
-    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+    <meta
+      name="description"
+      content="The official website of makeoutcy. Listen to the latest music, follow on social media, and more."
+    />
+    <meta
+      name="keywords"
+      content="makeoutcy, music, artist, lies, die out, spotify, soundcloud, youtube, instagram, twitter, discord, presave, hear now"
+    />
+    <!-- Your favicon -->
+    <link
+      rel="icon"
+      href="./assets/makeoutcy logo light.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="./assets/makeoutcy logo.png" />
+    <link
+      rel="android-chrome-touch-icon"
+      href="./assets/makeoutcy logo.png"
+    />
+    <!-- Theme colours -->
+    <link name="theme-color" content="#86252c" />
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+      property="og:title"
+      content="MAKEOUTCY | Official Website"
+    />
+    <meta
+      property="og:description"
+      content="The official website of makeoutcy. Listen to the latest music, follow on social media, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://makeoutcy.me/assets/makeoutcy logo light.png"
+    />
+    <meta property="og:url" content="https://makeoutcy.me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MAKEOUTCY" />
+    <meta property="og:locale" content="en_GB" />
+    <meta
+      property="og:author"
+      content="Mantas Statkevicius"
+    />
+    <!-- Twitter Meta Tags for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MAKEOUTCY | Official Website"
+    />
+    <meta
+      name="twitter:description"
+      content="The official website of makeoutcy. Listen to the latest music, follow on social media, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://makeoutcy.me/assets/makeoutcy logo light.png"
+    />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://makeoutcy.me" />
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
+    <!-- Authors -->
+    <meta name="author" content="Mantas Statkevicius" />
+    <!-- GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "MAKEOUTCY",
+          "url": "https://www.makeoutcy.me/",
+          "email": "makeoutcy@gmail.com",
+          "jobTitle": "Independent Artist",
+          "sameAs": [
+            "https://www.instagram.com/makeoutcy",
+            "https://www.twitter.com/makeoutcy",
+          ],
+          "description": "The official website of makeoutcy. Listen to the latest music, follow on social media, and more.",
+          "image": "https://makeoutcy.me/assets/makeoutcy logo light.png",
+        }
+        </script>
+        
 </head>
 <body>
-    <div class="main-page" style="background-image: url(assets/star.gif);">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/makeoutcy logo light.png" alt="makeoutcy">
-            </div>
+    <div class="blurredBG"></div>
+    <section>
+        <img class='logo' src="/assets/makeoutcy logo light.png" alt="">
 
-            <div class="links">
-                <div id="title">
-                    <h3>upcoming</h3>
-                </div>
-
-                <a href="https://distrokid.com/hyperfollow/makeoutcy/lies">
-                    <div id="button">PRE-SAVE LIES</div>
-                </a>
-
-                <div id="title">
-                    <h3>latest release</h3>
-                </div>
-
-                <a href="https://open.spotify.com/track/7E9DcqHuhnrVuikxRuucwl?si=86cf8ccaa8184f37">
-                    <div id="button">DIE OUT!</div>
-                </a>
-
-                <div id="title">
-                    <h3>platforms</h3>
-                </div>
-
+        <div id="platforms">
+            <ul>
                 <a href="https://open.spotify.com/artist/0wUngdPcNMFVtJiqkgEA9G?si=CbxZd84bQJGXJc3r6Sewsg">
-                    <div id="button">SPOTIFY</div>
+                    <li><i class='bx bxl-spotify' ></i></li>
                 </a>
                 <a href="https://soundcloud.com/makeoutcy">
-                    <div id="button">SOUNDCLOUD</div>
-                </a>
-                <a href="https://music.apple.com/us/artist/makeoutcy/1584001995">
-                    <div id="button">APPLE MUSIC</div>
+                    <li><i class='bx bxl-soundcloud' ></i></li>
                 </a>
                 <a href="https://www.youtube.com/channel/UCOPO4iNGe3OhJb0-ib8kHBQ">
-                    <div id="button">YOUTUBE</div>
+                    <li><i class='bx bxl-youtube'></i></li>
                 </a>
-
-                <div id="title">
-                    <h3>archives</h3>
-                </div>
-
-                <a href="https://open.spotify.com/artist/1ll2O0KiK0snvBpU6n3U8d?si=yAcHkA2LSSKwCkj56F9WWQ">
-                    <div id="button">SPOTIFY</div>
-                </a>
-                <a href="https://soundcloud.com/makeoutcy-archives">
-                    <div id="button">SOUNDCLOUD</div>
-                </a>
-                <a href="https://www.youtube.com/channel/UCgh9tVcq0WVuzmLwEMofNIw">
-                    <div id="button">YOUTUBE</div>
-                </a>
-
-            </div>
+            </ul>
         </div>
-    </div>
-
-    <footer>
-        <div class="footer-container">
-            <div class="text">
-                <h2>contact me</h2>
-            </div>
-            <div class="social">
-                <a href="https://www.instagram.com/makeoutcy/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://twitter.com/makeoutcy"><i class='bx bxl-twitter'></i></a>
-                <a href="https://discord.gg/3YzwQdvfxj"><i class='bx bxl-discord' ></i></a>
-            </div>
+    
+        <div id="upcoming">
+            <h2>Upcoming</h2>
+            <img src="/assets/song-covers/lies.jpg" alt="Cover art for the song Lies by makeoutcy">
+            <h3>lies</h3>
+            <a class="btn" href="https://distrokid.com/hyperfollow/makeoutcy/lies">presave</a>
         </div>
-    </footer>
+
+        <div id="latest">
+            <h2>Latest</h2>
+            <img src="/assets/song-covers/dieout.jpg" alt="Cover art for the song Die Out by makeoutcy">
+            <h3>die out</h3>
+            <a class="btn" href="https://open.spotify.com/track/7E9DcqHuhnrVuikxRuucwl?si=86cf8ccaa8184f37">hear now</a>
+        </div>
+
+        <div id="socials">
+            <h2>Contact Me</h2>
+            <ul>
+                <a href="https://instagram.com/makeoutcy">
+                    <li><i class='bx bxl-instagram'></i></li>
+                </a>
+                <a href="https://x.com/makeoutcy">
+                    <li><i class='bx bxl-twitter' ></i></li>
+                </a>
+                <a href="https://discord.gg/NS2NFvv74C">
+                    <li><i class='bx bxl-discord-alt' ></i></li>
+                </a>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>

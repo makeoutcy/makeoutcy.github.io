@@ -1,126 +1,220 @@
+:root {
+    color-scheme: dark light;
+    --bold: 'TSBlock', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --variable: 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'TSBlock';
+    src: url('/assets/fonts/TS Block Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url( '/assets/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
-    font-family: 'Micro 5', sans-serif;
-    color: white;
     overflow-x: hidden;
 }
 
 body {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.05);
+.blurredBG {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(100px) saturate(0);
+    position: absolute;
+    z-index: -1;
 }
 
-::-webkit-scrollbar-track {
-    background-color: hsla(0, 0%, 100%, 0);
-}
-
-.main-page {
-    width: 100svw;
-    height: auto;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-}
-
-.main-page .container {
-    /* width: 30svw; */
-
-    max-width: 400px;
-    min-width: 300px;
-
+section {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    /* margin-top: 2rem;
-    margin-bottom: 2rem; */
+    position: relative;
+    gap: clamp(8px, 4vw, 64px);
 }
 
-.main-page .container .logo {
-    & img {
-        width: 100px;
-    }
+section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.main-page .container .links {
-    font-size: 1.5rem;
+section * {
+    position: relative;
+    z-index: +1;
+    font-family: var(--bold);
 }
 
-.main-page .container .links #title {
-    margin-bottom: 1rem;
+section .logo {
+    width: clamp(64px, 16vw, 256px);
+    height: clamp(8px, 5vw, 72px);
+    object-fit: cover;
+    margin-top: clamp(8px, 8vh, 64px);
 }
 
-.main-page .container .links a {
+section img {
+    width: clamp(8px, 28vw, 440px);
+}
+
+section #upcoming, section #latest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(8px, 1vh, 16px);
+    margin-bottom: clamp(8px, 8vh, 64px);
+    overflow: hidden;
+}
+
+section #upcoming h2, section #latest h2 {
+    font-size: clamp(16px, 3vw, 48px);
     color: white;
 }
 
-#button {
-    width: 150px;
-    padding: 0.5rem;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    border: solid 2px white;
-    bottom: 0;
-    right: 0;
+section #upcoming h3, section #latest h3 {
+    font-size: clamp(12px, 2vw, 32px);
+    color: white;
 }
 
-#button:hover {
-    bottom: 4px;
-    right: 4px;
-    box-shadow: 4px 4px white;
+section .btn {
+    text-decoration: none;
+    margin-top: clamp(8px, 2vh, 16px);
+    padding: 8px 16px;
+    font-size: clamp(12px, 2vw, 32px);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-footer {
-    width: 100svw;
-    height: 25svh;
-    color: black;
-    background-color: white;
+section .btn:hover {
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+section #platforms {
+    max-width: 20vw;
     width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
-footer .text,
-footer .social {
+section #socials {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px) saturate(0);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 32px);
+    padding-top: clamp(8px, 8vh, 64px);
 }
 
-footer .text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+section ul {
+    width: 100%;
+    max-width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: clamp(32px, 5vh, 84px);
 }
 
-footer .social {
-    font-size: 2rem;
-    gap: 2rem;
-    
-    & a {
-        color: black;
-        text-decoration: none;
+section ul a li {
+    list-style: none;
+}
+
+section ul a li i {
+    font-size: clamp(8px, 4vw, 48px);
+}
+
+section ul a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+section ul a:hover {
+    color: gray;
+}
+
+@media (max-width: 1024px) or (pointer: coarse) {
+    section .logo {
+        width: 186px;
+        height: 48px;
     }
+
+    section #platforms {
+        max-width: 70vw;
+    }
+
+    section #platforms ul, section #socials ul {
+        width: 100%;
+        max-width: unset;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    section #platforms ul a li i, section #socials ul a li i {
+        font-size: 32px;
+    }
+
+    section img {
+        width: 50vw;
+    }
+
+    section #upcoming, section #latest {
+        max-height: unset;
+    }
+
+    section #upcoming h2, section #latest h2{
+        font-size: 24px;
+    }
+
+    section #upcoming h3, section #latest h3 {
+        font-size: 20px;
+    }
+
+    section .btn {
+        font-size: 20px;
+    }
+
+    section #socials {
+        padding-top: 32px;
+        gap: 16px;
+    }
+
 }
