@@ -71,6 +71,12 @@ section:before {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+section .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 section * {
     position: relative;
     z-index: +1;
@@ -175,6 +181,10 @@ section ul a:hover {
     section .logo {
         width: 186px;
         height: 48px;
+    }
+
+    section .container {
+        flex-direction: column;
     }
 
     section #platforms {
