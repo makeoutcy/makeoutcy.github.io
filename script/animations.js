@@ -29,14 +29,25 @@ gsap.utils.toArray("section").forEach((section) => {
     }
 });
 
-gsap.to("#socials", {
-    opacity: 1,
-    scrollTrigger: {
-        trigger: "#socials",
-        start: "top 98%",
-        onEnter: () => animateContent("#socials"),
-    },
-});
+if (!window.matchMedia("(pointer: coarse)").matches) {
+    gsap.to("#socials", {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: "#socials",
+            start: "top 98%",
+            onEnter: () => animateContent("#socials"),
+        },
+    });
+} else {
+    gsap.to("#socials", {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: "#socials",
+            start: "top 101%",
+            onEnter: () => animateContent("#socials"),
+        },
+    });
+}
 
 gsap.utils.toArray("section").forEach((section) => {
     if (window.scrollY + window.innerHeight > section.offsetTop) {
