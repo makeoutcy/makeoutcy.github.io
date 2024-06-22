@@ -28,22 +28,14 @@ gsap.utils.toArray("section").forEach((section) => {
         });
     }
 });
-
-if (!window.matchMedia("(pointer: coarse)").matches) {
-    gsap.to("#socials", {
-        opacity: 1,
-        scrollTrigger: {
-            trigger: "#socials",
-            start: "top 98%",
-            onEnter: () => animateContent("#socials"),
-        },
-    });
+if (window.innerWidth < 1024 && window.matchMedia("(pointer: coarse)").matches) {
+    console.log("Cannot animate socials on mobile devices");
 } else {
     gsap.to("#socials", {
         opacity: 1,
         scrollTrigger: {
             trigger: "#socials",
-            start: "top 101%",
+            start: "bottom 98%",
             onEnter: () => animateContent("#socials"),
         },
     });
