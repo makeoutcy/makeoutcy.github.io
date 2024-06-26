@@ -95,7 +95,17 @@ section img {
     width: clamp(8px, 28vw, 440px);
 }
 
-section #upcoming, section #latest {
+section #upcoming {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(8px, 1vh, 16px);
+    margin-bottom: clamp(8px, 8vh, 64px);
+    overflow: hidden;
+} 
+
+section #latest {
     display: flex;
     flex-direction: column;
     justify-content: center;
