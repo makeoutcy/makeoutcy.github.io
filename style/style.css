@@ -132,7 +132,7 @@ section #upcoming {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: clamp(8px, 1vh, 16px);
+    gap: clamp(12px, 1vh, 24px);
     margin-bottom: clamp(8px, 8vh, 64px);
     overflow: hidden;
 } 
@@ -142,7 +142,7 @@ section #latest {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: clamp(8px, 1vh, 16px);
+    gap: clamp(12px, 1vh, 24px);
     margin-bottom: clamp(8px, 8vh, 64px);
     overflow: hidden;
 }
@@ -160,10 +160,11 @@ section #upcoming h2, section #latest h2 {
 section #upcoming h3, section #latest h3 {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     font-size: clamp(12px, 2vw, 32px);
+    padding: 4px;
     color: white;
 }
 
-section .btn {
+section .btn, .all-music-container .button {
     text-decoration: none;
     margin-top: clamp(8px, 2vh, 16px);
     padding: 8px 16px;
@@ -179,7 +180,7 @@ section .btn {
     transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-section .btn:hover {
+section .btn:hover, .all-music-container .button:hover {
     scale: 1.1;
     background-color: rgba(0, 0, 0, 0.75);
     color: rgba(255, 255, 255, 0.75);
@@ -188,6 +189,22 @@ section .btn:hover {
 section #platforms {
     max-width: 20vw;
     width: 100%;
+}
+
+section #all-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 20vh;
+    width: 100%;
+}
+
+section #all-music h2, .all-music-container h2 {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    font-size: clamp(16px, 3vw, 48px);
+    color: white;
+    text-align: center;
 }
 
 section #socials {
@@ -227,6 +244,132 @@ section ul a {
 
 section ul a:hover {
     color: gray;
+}
+
+.all-music-container {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.all-music-container #song {
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.all-music-container #song img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: clamp(8px, 28vw, 440px);
+    max-height: clamp(8px, 28vw, 440px);
+    aspect-ratio: 1/1;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: +1;
+}
+
+.overlay .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 12px;
+    padding-top: 64px;
+}
+
+.overlay .content iframe {
+    width: 100%;
+    margin-top: clamp(8px, 2vh, 16px);
+}
+
+.overlay .content .folded-menu {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: clamp(12px, 2vw, 32px);
+    color: white;
+    font-family: var(--variable);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.overlay .content .folded-menu::before {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay .content .folded-menu iframe div {
+    display: none;
+}
+
+.overlay .content .folded-menu:nth-of-type(1)::before {
+    content: 'Spotify';
+}
+
+.overlay .content .folded-menu:nth-of-type(2)::before {
+    content: 'Soundcloud';
+}
+
+.overlay .content .folded-menu:nth-of-type(3)::before {
+    content: 'Apple Music';
+}
+
+.overlay .content .close {
+    padding: clamp(4px, 1vh, 8px);
+    border-radius: 4px;
+    margin: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(12px, 1vw, 24px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) or (pointer: coarse) {
