@@ -34,55 +34,57 @@ fetch('script/musicInfo.json')
 
         buttons.forEach((button) => {
             button.addEventListener('click', () => {
-                const songTitle = button.parentNode.querySelector('h2').textContent;
-                const songInfo = data.find((music) => music.title === songTitle);
-                overlay.innerHTML = `
-                    <div class="content">
-                        <button class="close"><i class='bx bx-x'></i></button>
-                        <div class="folded-menu">
-                            ${songInfo.spotify || ''}
+                if (button.innerHTML !== 'Presave') {
+                    const songTitle = button.parentNode.querySelector('h2').textContent;
+                    const songInfo = data.find((music) => music.title === songTitle);
+                    overlay.innerHTML = `
+                        <div class="content">
+                            <button class="close"><i class='bx bx-x'></i></button>
+                            <div class="folded-menu">
+                                ${songInfo.spotify || ''}
+                            </div>
+                            <div class="folded-menu">
+                                ${songInfo.soundcloud || ''}
+                            </div>
+                            <div class="folded-menu">
+                                ${songInfo.applemusic || ''}
+                            </div>
                         </div>
-                        <div class="folded-menu">
-                            ${songInfo.soundcloud || ''}
-                        </div>
-                        <div class="folded-menu">
-                            ${songInfo.applemusic || ''}
-                        </div>
-                    </div>
-                `;
-                document.body.appendChild(overlay); // Add this line if you want to append overlay to the body
+                    `;
+                    document.body.appendChild(overlay); // Add this line if you want to append overlay to the body
 
-                const closeButton = document.querySelector('.close');
-                closeButton.addEventListener('click', () => {
-                    overlay.remove();
-                });
-
-                const foldedMenus = document.querySelectorAll('.folded-menu');
-                foldedMenus.forEach((foldedMenu) => {
-                    foldedMenu.querySelector('iframe').style.display = 'none';
-                    
-                    if (foldedMenu.querySelector('div')) {
-                        foldedMenu.querySelector('div').style.display = 'none';
-                    }
-
-                    foldedMenu.addEventListener('click', () => {
-                        // Check if the clicked folded menu is already active
-                        const isActive = foldedMenu.classList.contains('active');
-
-                        // Remove active class from all folded menus
-                        const foldedMenus = document.querySelectorAll('.folded-menu');
-                        foldedMenus.forEach((menu) => {
-                            menu.classList.remove('active');
-                            menu.querySelector('iframe').style.display = 'none';
-                        });
-
-                        // Toggle the active class and display the iframe accordingly
-                        if (!isActive) {
-                            foldedMenu.classList.add('active');
-                            foldedMenu.querySelector('iframe').style.display = 'block';
-                        }
+                    const closeButton = document.querySelector('.close');
+                    closeButton.addEventListener('click', () => {
+                        overlay.remove();
                     });
-                });
+
+                    const foldedMenus = document.querySelectorAll('.folded-menu');
+                    foldedMenus.forEach((foldedMenu) => {
+                        foldedMenu.querySelector('iframe').style.display = 'none';
+                        
+                        if (foldedMenu.querySelector('div')) {
+                            foldedMenu.querySelector('div').style.display = 'none';
+                        }
+
+                        foldedMenu.addEventListener('click', () => {
+                            // Check if the clicked folded menu is already active
+                            const isActive = foldedMenu.classList.contains('active');
+
+                            // Remove active class from all folded menus
+                            const foldedMenus = document.querySelectorAll('.folded-menu');
+                            foldedMenus.forEach((menu) => {
+                                menu.classList.remove('active');
+                                menu.querySelector('iframe').style.display = 'none';
+                            });
+
+                            // Toggle the active class and display the iframe accordingly
+                            if (!isActive) {
+                                foldedMenu.classList.add('active');
+                                foldedMenu.querySelector('iframe').style.display = 'block';
+                            }
+                        });
+                    });
+                }
             });
         });
     })
