@@ -256,6 +256,7 @@ section ul a:hover {
 }
 
 .all-music-container #song {
+    margin-top: 16px;
     padding: 16px;
     overflow: hidden;
     display: flex;
