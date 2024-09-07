@@ -202,7 +202,7 @@ section #all-music {
 
 section #all-music h2, .all-music-container h2 {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    font-size: clamp(16px, 3vw, 48px);
+    font-size: clamp(8px, 3vw, 36px);
     color: white;
     text-align: center;
 }
@@ -423,4 +423,20 @@ section ul a:hover {
         gap: 16px;
     }
 
+    .all-music-container {
+        flex-direction: column-reverse;
+    }
+
+    .all-music-container #song img {
+        max-width: 75vw;
+        max-height: 75vw;
+    }
+
+    section #all-music h2, .all-music-container h2 {
+        font-size: 24px;
+    }
+
+    section .btn, .all-music-container .button {
+        font-size: 24px;
+    }
 }
