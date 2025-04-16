@@ -2,6 +2,7 @@
     {
         "cover": "../assets/song-covers/dieout.jpg",
         "title": "Die Out",
+        "redirect": "https://open.spotify.com/track/7E9DcqHuhnrVuikxRuucwl?si=adc70207712e4f3f",
         "released": true,
         "spotify": "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/album/4hID7TqOksUS0HJcRdVl9N?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
         "soundcloud": "<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1627923057&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true' allowfullscreen></iframe><div style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'><a href='https://soundcloud.com/makeoutcy' title='✧･ﾟ:* makeoutcy  *:･ﾟ✧' target='_blank' style='color: #cccccc; text-decoration: none;'>✧･ﾟ:* makeoutcy  *:･ﾟ✧</a> · <a href='https://soundcloud.com/makeoutcy/die-out-p-moonshop' title='die out [p. moonshop]' target='_blank' style='color: #cccccc; text-decoration: none;'>die out [p. moonshop]</a></div>",
@@ -9,7 +10,8 @@
     },
     {
         "cover": "../assets/song-covers/lies.jpg",
-        "title": "Lies",
+        "title": "lies",
+        "redirect": "https://open.spotify.com/track/2cu4B97lSF5rHwHk26UiDM?si=d68357cf06fd4780",
         "released": true,
         "spotify": "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/album/2DvWDRK244avV2CMau7UJp?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
         "soundcloud": "<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1848575874&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true' allowfullscreen></iframe><div style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'><a href='https://soundcloud.com/makeoutcy' title='✧･ﾟ:* makeoutcy  *:･ﾟ✧' target='_blank' style='color: #cccccc; text-decoration: none;'>✧･ﾟ:* makeoutcy  *:･ﾟ✧</a> · <a href='https://soundcloud.com/makeoutcy/lies' title='lies*' target='_blank' style='color: #cccccc; text-decoration: none;'>lies*</a></div>",
@@ -18,6 +20,7 @@
     {
         "cover": "../assets/song-covers/mia-cover.png",
         "title": "M.I.A",
+        "redirect": "https://open.spotify.com/album/2sv9pdaAg2fuG65vRnw451?si=rx_rWJr_SeW1DbOi72lCPQ",
         "released": true,
         "spotify": "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/album/2sv9pdaAg2fuG65vRnw451?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
         "soundcloud": "<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1819363983&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe><div style='display: none; font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'><a href='https://soundcloud.com/makeoutcy' title='makeoutcy' target='_blank' style='color: #cccccc; text-decoration: none;'>makeoutcy</a> · <a href='https://soundcloud.com/makeoutcy/sets/mia-prod-kayobi-x-tenseoh' title='M.I.A : The Collection' target='_blank' style='color: #cccccc; text-decoration: none;'>M.I.A : The Collection</a></div>",
@@ -26,7 +29,16 @@
     {
         "cover": "../assets/song-covers/turn-me-up.jpg",
         "title": "TURN ME UP",
+        "redirect": "https://open.spotify.com/track/7gdbJlImf6reQpmUtaGBg8?si=c93c5a682ffc4c2b",
+        "released": true,
+        "spotify": "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/album/64CgCrs2tVBlS9e26GSPyB?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
+        "soundcloud": "<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1908353828&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe><div style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'><a href='https://soundcloud.com/makeoutcy' title='makeoutcy' target='_blank' style='color: #cccccc; text-decoration: none;'>makeoutcy</a> · <a href='https://soundcloud.com/makeoutcy/turn-me-up-final' title='TURN ME UP [p. hailyy x stormboy]' target='_blank' style='color: #cccccc; text-decoration: none;'>TURN ME UP [p. hailyy x stormboy]</a></div>",
+        "applumusic": "<iframe allow='autoplay *; encrypted-media *; fullscreen *; clipboard-write' frameborder='0' height='450' style='width:100%;max-width:660px;overflow:hidden;border-radius:10px;' sandbox='allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation' src='https://embed.music.apple.com/us/album/turn-me-up-single/1766977327'></iframe>"
+    },
+    {
+        "cover": "../assets/song-covers/cestlaton.png",
+        "title": "C'est la ton (ft. Hexd)",
         "released": false,
-        "presave": "https://distrokid.com/hyperfollow/makeoutcy/turn-me-up"
+        "presave": "https://distrokid.com/hyperfollow/makeoutcy/cest-la-ton-feat-hexd"
     }
 ]
