@@ -24,7 +24,7 @@ fetch('./script/musicInfo.json')
         if (upcomingSong) {
             upcomingText.textContent = upcomingSong.title;
             upcomingImg.src = upcomingSong.cover;
-            upcomingLink.href = upcomingSong.redirect;
+            upcomingLink.href = upcomingSong.presave;
         }
         else {
             console.error('No upcoming songs found.');
