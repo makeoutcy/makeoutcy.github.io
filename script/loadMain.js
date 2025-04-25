@@ -27,7 +27,7 @@ fetch('./script/musicInfo.json')
             upcomingLink.href = upcomingSong.presave;
         }
         else {
-            console.error('No upcoming songs found.');
+            document.querySelector('#upcoming').remove();
         }
     })
     .catch(error => console.error('Error loading music info:', error));
